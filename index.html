@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden w-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vellura Hair Care | Premium Solutions & Enterprise Hub</title>
+    <meta name="description"
+        content="Discover personalized hair-care solutions, clean beauty, and enterprise hair-care solutions.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#fcf9f5',
+                            100: '#f5efe6',
+                            200: '#eadbc4',
+                            300: '#ddc19d',
+                            400: '#cca273',
+                            500: '#c18952',
+                            600: '#b47344',
+                            700: '#965a39',
+                            800: '#7a4b32',
+                            900: '#623f2b',
+                        },
+                        dark: {
+                            bg: '#12100e',
+                            surface: '#1c1917',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body
+    class="bg-primary-50 text-gray-900 dark:bg-dark-bg dark:text-gray-100 transition-colors duration-500 overflow-x-hidden font-sans">
+
+    <!-- Header -->
+    <header id="main-header"
+        class="fixed w-full top-0 z-50 transition-all duration-300 py-4 px-6 md:px-12 glass-header border-b border-transparent">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#"
+                class="flex items-center gap-2 text-2xl font-serif font-bold tracking-wider text-primary-900 dark:text-primary-200">
+                <i class="ph-fill ph-sparkle text-primary-500 text-3xl"></i>
+                VELLURA<span class="text-primary-500">.</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden xl:flex items-center space-x-8 font-medium text-sm tracking-wide">
+                <a href="#home" class="nav-link hover:text-primary-500 transition-colors">Home</a>
+                <a href="#solutions" class="nav-link hover:text-primary-500 transition-colors">Solutions</a>
+                <a href="#shop" class="nav-link hover:text-primary-500 transition-colors">Shop</a>
+                <a href="#quiz" class="nav-link hover:text-primary-500 transition-colors">Diagnostic</a>
+                <a href="#subscriptions" class="nav-link hover:text-primary-500 transition-colors">Subscribe</a>
+                <a href="#enterprise" class="nav-link hover:text-primary-500 transition-colors">Enterprise</a>
+            </nav>
+
+            <!-- Shared Actions & Mobile Menu Toggle -->
+            <div class="flex items-center space-x-4 xl:space-x-5">
+                <!-- Cart -->
+                <button aria-label="Cart" class="hover:text-primary-500 transition-colors relative">
+                    <i class="ph ph-shopping-cart text-xl"></i>
+                    <span
+                        class="absolute -top-2 -right-2 bg-primary-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                </button>
+                
+                <div class="h-6 w-px bg-gray-300 dark:bg-gray-700 hidden xl:block"></div>
+                
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="hover:text-primary-500 transition-colors"><i
+                        class="ph ph-moon text-xl"></i></button>
+                
+                <!-- Desktop CTA -->
+                <a href="#quiz"
+                    class="hidden xl:inline-block px-6 py-2.5 bg-primary-900 dark:bg-primary-500 text-white font-bold rounded-full transition-all duration-300 hover:bg-primary-800 dark:hover:bg-primary-400 hover:shadow-lg hover:-translate-y-1">Find
+                    My Solution</a>
+                    
+                <!-- Mobile Menu Toggle -->
+                <button id="mobile-menu-btn" class="xl:hidden text-2xl text-primary-900 dark:text-primary-200">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-primary-50/95 dark:bg-dark-bg/95 backdrop-blur-md z-40 flex flex-col pt-24 px-6 translate-x-full transition-transform duration-500 xl:hidden">
+        <nav class="flex flex-col space-y-6 text-2xl font-serif">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#solutions" class="mobile-link">Solutions</a>
+            <a href="#shop" class="mobile-link">Shop</a>
+            <a href="#quiz" class="mobile-link">Diagnostic</a>
+            <a href="#subscriptions" class="mobile-link">Subscribe</a>
+            <a href="#enterprise" class="mobile-link">Enterprise</a>
+            <div class="pt-2">
+                <a href="#quiz"
+                    class="inline-block px-8 py-3 bg-primary-900 dark:bg-primary-500 text-white font-sans text-base font-bold rounded-full transition-all hover:bg-primary-800 dark:hover:bg-primary-400">Find My Solution</a>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <div
+                class="absolute inset-0 bg-gradient-to-br from-primary-100 to-primary-50 dark:from-dark-bg dark:to-dark-surface z-0">
+            </div>
+            <!-- Decorative Elements -->
+            <div
+                class="absolute top-1/4 -left-20 w-96 h-96 bg-primary-200/50 dark:bg-primary-900/20 rounded-full blur-3xl mix-blend-multiply dark:mix-blend-lighten animate-blob z-0">
+            </div>
+            <div
+                class="absolute bottom-1/4 -right-20 w-96 h-96 bg-primary-300/40 dark:bg-primary-800/20 rounded-full blur-3xl mix-blend-multiply dark:mix-blend-lighten animate-blob animation-delay-2000 z-0">
+            </div>
+
+            <div class="container mx-auto px-6 lg:px-12 relative z-10 flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 pt-12 lg:pt-0" data-aos="fade-right" data-aos-duration="1000">
+                    <div
+                        class="inline-block px-4 py-1.5 rounded-full border border-primary-300 dark:border-primary-700 text-sm font-medium text-primary-700 dark:text-primary-300 mb-6">
+                        Personalized Precision
+                    </div>
+                    <h1
+                        class="text-5xl lg:text-7xl font-serif font-bold leading-tight mb-6 text-gray-900 dark:text-white">
+                        Your Hair Deserves a <span class="text-primary-500 italic">Smarter</span> Care Routine.
+                    </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mb-10 max-w-lg leading-relaxed">
+                        Discover personalized hair-care solutions designed around your hair type, concerns, routine and
+                        lifestyle. Premium ingredients meet exact science.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#quiz"
+                            class="inline-block px-8 py-3 bg-primary-900 dark:bg-primary-500 text-white font-bold rounded-full transition-all duration-300 hover:bg-primary-800 dark:hover:bg-primary-400 hover:shadow-lg hover:-translate-y-1 text-center">Find
+                            My Hair Solution</a>
+                        <a href="#shop"
+                            class="inline-block px-8 py-3 bg-transparent border border-primary-900 dark:border-primary-500 text-primary-900 dark:text-primary-500 font-bold rounded-full transition-all duration-300 hover:bg-primary-900 dark:hover:bg-primary-500 hover:text-white dark:hover:text-white text-center">Shop
+                            Hair Care</a>
+                    </div>
+
+                    <div class="mt-16 flex flex-wrap gap-8">
+                        <div class="animate-float" style="animation-delay: 0s;">
+                            <p class="text-3xl font-bold text-primary-600 dark:text-primary-400">50+</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Hair Solutions</p>
+                        </div>
+                        <div class="animate-float" style="animation-delay: 1s;">
+                            <p class="text-3xl font-bold text-primary-600 dark:text-primary-400">100%</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Sulfate-Free</p>
+                        </div>
+                        <div class="animate-float" style="animation-delay: 2s;">
+                            <p class="text-3xl font-bold text-primary-600 dark:text-primary-400">10K+</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Hero Visual Area -->
+                <div class="lg:w-1/2 h-[600px] relative mt-16 lg:mt-0 perspective-1000" id="hero-3d-scene"
+                    data-aos="zoom-in" data-aos-duration="1500">
+                    <!-- Glass Panel -->
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[450px] glass-card rounded-3xl z-10 border border-white/20 dark:border-white/10 shadow-2xl flex flex-col items-center justify-center p-6 3d-layer">
+                        <div
+                            class="w-full h-full bg-gradient-to-b from-primary-200/30 to-transparent dark:from-primary-900/30 rounded-2xl relative overflow-hidden flex items-end justify-center pb-8">
+                            <img src="product-image.jpg" alt="Nourishing Elixir"
+                                class="absolute inset-0 w-full h-full object-cover z-0">
+                            <!-- Gradient overlay for text readability -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                            <div class="text-center absolute bottom-8 z-20 w-full">
+                                <h3 class="font-serif text-xl font-bold text-white">Nourishing Elixir</h3>
+                                <p class="text-xs text-white/80 mt-1">Argan & Macadamia</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative shapes mimicking products -->
+                    <div class="absolute top-20 right-20 w-24 h-48 bg-gradient-to-tr from-primary-400 to-primary-200 dark:from-primary-700 dark:to-primary-500 rounded-full shadow-xl 3d-layer animate-float"
+                        style="animation-delay: 0.5s;"></div>
+                    <div class="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-tr from-amber-700 to-amber-300 rounded-full shadow-xl 3d-layer animate-float"
+                        style="animation-delay: 1.5s;"></div>
+                    <div class="absolute top-40 left-10 w-16 h-16 bg-green-800/40 backdrop-blur-md rounded-lg shadow-xl 3d-layer transform rotate-12 animate-float"
+                        style="animation-delay: 2.5s;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Hair Type Discovery -->
+        <section id="solutions" class="py-24 bg-white dark:bg-dark-surface relative overflow-hidden">
+            <div class="container mx-auto px-6 lg:px-12 relative z-10">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Know Your Hair. Choose Better.</h2>
+                    <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Select your primary hair type to
+                        discover tailored recommendations, ingredients, and solutions.</p>
+                </div>
+
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-16">
+                    <!-- Interactive Wheel/List -->
+                    <div class="w-full lg:w-1/3" data-aos="fade-right">
+                        <div class="flex flex-col space-y-2 hair-type-selector">
+                            <button
+                                class="text-left px-6 py-4 rounded-xl transition-all duration-300 bg-primary-50 dark:bg-primary-900/20 border-l-4 border-primary-500 font-bold text-lg active-type"
+                                data-type="curly">Curly + Dry</button>
+                            <button
+                                class="text-left px-6 py-4 rounded-xl transition-all duration-300 hover:bg-primary-50 dark:hover:bg-primary-900/10 border-l-4 border-transparent text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                                data-type="straight">Straight + Fine</button>
+                            <button
+                                class="text-left px-6 py-4 rounded-xl transition-all duration-300 hover:bg-primary-50 dark:hover:bg-primary-900/10 border-l-4 border-transparent text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                                data-type="colored">Color-Treated</button>
+                            <button
+                                class="text-left px-6 py-4 rounded-xl transition-all duration-300 hover:bg-primary-50 dark:hover:bg-primary-900/10 border-l-4 border-transparent text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                                data-type="damaged">Damaged + Brittle</button>
+                            <button
+                                class="text-left px-6 py-4 rounded-xl transition-all duration-300 hover:bg-primary-50 dark:hover:bg-primary-900/10 border-l-4 border-transparent text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                                data-type="oily">Oily Scalp</button>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Results Panel -->
+                    <div class="w-full lg:w-2/3" data-aos="zoom-in" data-aos-delay="200">
+                        <div
+                            class="glass-card p-8 lg:p-12 rounded-3xl border border-primary-100 dark:border-primary-900 relative overflow-hidden group">
+                            <!-- Background gradient pulse -->
+                            <div
+                                class="absolute -inset-2 bg-gradient-to-r from-primary-400 to-primary-600 rounded-[2rem] opacity-10 group-hover:opacity-20 transition-opacity blur-xl">
+                            </div>
+
+                            <div class="relative z-10" id="type-result-content">
+                                <h3 class="text-3xl font-serif font-bold mb-2">Curly + Dry Hair</h3>
+                                <p class="text-gray-600 dark:text-gray-400 mb-8">Requires intense hydration, curl
+                                    definition, and frizz control without weighing down the natural pattern.</p>
+
+                                <div class="grid md:grid-cols-2 gap-8">
+                                    <div>
+                                        <h4
+                                            class="font-bold text-sm uppercase tracking-wider text-primary-600 dark:text-primary-400 mb-4">
+                                            Recommended Ingredients</h4>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-center"><i
+                                                    class="ph-fill ph-check-circle text-primary-500 mr-2"></i> Shea
+                                                Butter</li>
+                                            <li class="flex items-center"><i
+                                                    class="ph-fill ph-check-circle text-primary-500 mr-2"></i> Argan Oil
+                                            </li>
+                                            <li class="flex items-center"><i
+                                                    class="ph-fill ph-check-circle text-primary-500 mr-2"></i>
+                                                Hyaluronic Acid</li>
+                                            <li class="flex items-center"><i
+                                                    class="ph-fill ph-check-circle text-primary-500 mr-2"></i> Aloe Vera
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4
+                                            class="font-bold text-sm uppercase tracking-wider text-primary-600 dark:text-primary-400 mb-4">
+                                            Action Plan</h4>
+                                        <div class="flex flex-wrap gap-2">
+                                            <span
+                                                class="px-3 py-1 bg-primary-100 dark:bg-primary-900/40 rounded-full text-sm">Deep
+                                                Conditioning</span>
+                                            <span
+                                                class="px-3 py-1 bg-primary-100 dark:bg-primary-900/40 rounded-full text-sm">Leave-in
+                                                Moisture</span>
+                                            <span
+                                                class="px-3 py-1 bg-primary-100 dark:bg-primary-900/40 rounded-full text-sm">Sulfate-Free
+                                                Cleansing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-800">
+                                    <a href="#shop"
+                                        class="text-primary-600 dark:text-primary-400 font-bold hover:underline inline-flex items-center">
+                                        View Hydration Collection <i class="ph ph-arrow-right ml-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Diagnostic Quiz -->
+        <section id="quiz" class="py-24 bg-primary-900 text-white relative overflow-hidden">
+            <div
+                class="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]">
+            </div>
+
+            <div class="container mx-auto px-6 lg:px-12 relative z-10">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12" data-aos="fade-down">
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Find Your Personalized Hair Routine.
+                        </h2>
+                        <p class="text-primary-200">Take our 1-minute diagnostic to unlock a custom care regimen.</p>
+                    </div>
+
+                    <!-- Quiz Container -->
+                    <div class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 md:p-12 shadow-2xl relative min-h-[400px] flex flex-col"
+                        data-aos="zoom-in">
+                        <!-- Progress -->
+                        <div class="w-full bg-white/20 rounded-full h-1.5 mb-8">
+                            <div class="bg-primary-400 h-1.5 rounded-full transition-all duration-500"
+                                style="width: 25%" id="quiz-progress"></div>
+                        </div>
+
+                        <!-- Step 1 -->
+                        <div class="quiz-step active flex-1 flex flex-col justify-center" id="step-1">
+                            <h3 class="text-2xl font-serif mb-8 text-center">What is your natural hair type?</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <button
+                                    class="quiz-option p-6 rounded-2xl border border-white/20 hover:bg-white/10 transition-all flex flex-col items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full border-2 border-white/50 flex items-center justify-center">
+                                        S</div>
+                                    <span>Straight</span>
+                                </button>
+                                <button
+                                    class="quiz-option p-6 rounded-2xl border border-white/20 hover:bg-white/10 transition-all flex flex-col items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full border-2 border-white/50 flex items-center justify-center">
+                                        W</div>
+                                    <span>Wavy</span>
+                                </button>
+                                <button
+                                    class="quiz-option p-6 rounded-2xl border border-white/20 hover:bg-white/10 transition-all flex flex-col items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full border-2 border-white/50 flex items-center justify-center">
+                                        C</div>
+                                    <span>Curly</span>
+                                </button>
+                                <button
+                                    class="quiz-option p-6 rounded-2xl border border-white/20 hover:bg-white/10 transition-all flex flex-col items-center gap-3">
+                                    <div
+                                        class="w-12 h-12 rounded-full border-2 border-white/50 flex items-center justify-center">
+                                        K</div>
+                                    <span>Coily</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Quiz Controls -->
+                        <div class="flex justify-between mt-8 pt-6 border-t border-white/10">
+                            <button class="text-white/60 hover:text-white transition-colors invisible"
+                                id="quiz-prev">Back</button>
+                            <button
+                                class="bg-white text-primary-900 px-8 py-3 rounded-full font-bold hover:bg-primary-100 transition-colors"
+                                id="quiz-next">Next Step</button>
+                        </div>
+
+                        <!-- Result Overlay (Hidden initially) -->
+                        <div class="absolute inset-0 bg-primary-900 rounded-3xl p-8 md:p-12 hidden flex-col items-center justify-center text-center z-20"
+                            id="quiz-result">
+                            <div
+                                class="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center mb-6 animate-bounce">
+                                <i class="ph ph-sparkle text-4xl"></i>
+                            </div>
+                            <h3 class="text-3xl font-serif font-bold mb-4">Your Profile: Hydration + Repair</h3>
+                            <p class="text-primary-200 mb-8 max-w-md mx-auto">Based on your answers, your hair needs
+                                moisture retention and structural repair. We've curated a custom routine.</p>
+                            <div class="flex gap-4">
+                                <a href="#routine"
+                                    class="bg-white text-primary-900 px-8 py-3 rounded-full font-bold hover:bg-primary-100 transition-colors">View
+                                    My Routine</a>
+                                <button
+                                    class="border border-white/30 hover:bg-white/10 px-8 py-3 rounded-full font-bold transition-colors"
+                                    onclick="location.reload()">Retake</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Featured Products -->
+        <section id="shop" class="py-24 bg-primary-50 dark:bg-dark-bg relative">
+            <div class="container mx-auto px-6 lg:px-12">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16" data-aos="fade-up">
+                    <div class="max-w-xl">
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Curated Excellence.</h2>
+                        <p class="text-gray-600 dark:text-gray-400">Discover our meticulously formulated collection,
+                            designed to transform your hair's health at a cellular level.</p>
+                    </div>
+                    <a href="#" class="btn-secondary mt-6 md:mt-0">Shop All Products</a>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Product 1 -->
+                    <div class="group" data-aos="fade-up" data-aos-delay="0">
+                        <div
+                            class="relative overflow-hidden rounded-2xl bg-white dark:bg-dark-surface aspect-[3/4] mb-6 flex items-center justify-center p-8">
+                            <div
+                                class="absolute inset-0 bg-primary-100 dark:bg-primary-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <!-- Real Product Image -->
+                            <img src="hair-mask.jpg" alt="Restorative Hair Mask"
+                                class="absolute inset-0 w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500 z-10">
+
+                            <!-- Overlay Actions -->
+                            <div
+                                class="absolute bottom-6 left-0 right-0 flex justify-center space-x-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-20">
+                                <button
+                                    class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-500 hover:text-white transition-colors"><i
+                                        class="ph ph-heart text-xl"></i></button>
+                                <button
+                                    class="h-12 px-6 bg-gray-900 text-white rounded-full font-bold shadow-lg hover:bg-primary-600 transition-colors flex items-center">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-xl font-bold">Restorative Hair Mask</h3>
+                                <span class="font-medium">$48</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-2">Damaged / Color-Treated</p>
+                            <div class="flex items-center text-sm text-yellow-500">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star-half"></i>
+                                <span class="text-gray-400 ml-2">(124)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="group" data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="relative overflow-hidden rounded-2xl bg-white dark:bg-dark-surface aspect-[3/4] mb-6 flex items-center justify-center p-8">
+                            <div
+                                class="absolute inset-0 bg-amber-50 dark:bg-amber-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <!-- Real Product Image -->
+                            <img src="scalp-serum.jpg" alt="Botanical Scalp Serum"
+                                class="absolute inset-0 w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500 z-10">
+
+                            <div
+                                class="absolute bottom-6 left-0 right-0 flex justify-center space-x-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-20">
+                                <button
+                                    class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-500 hover:text-white transition-colors"><i
+                                        class="ph ph-heart text-xl"></i></button>
+                                <button
+                                    class="h-12 px-6 bg-gray-900 text-white rounded-full font-bold shadow-lg hover:bg-primary-600 transition-colors flex items-center">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-xl font-bold">Botanical Scalp Serum</h3>
+                                <span class="font-medium">$36</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-2">Dry / Itchy Scalp</p>
+                            <div class="flex items-center text-sm text-yellow-500">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i>
+                                <span class="text-gray-400 ml-2">(89)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="group md:col-span-2 lg:col-span-1 flex justify-center lg:block" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-full md:w-[calc(50%-1.25rem)] lg:w-full">
+                            <div
+                                class="relative overflow-hidden rounded-2xl bg-white dark:bg-dark-surface aspect-[3/4] mb-6 flex items-center justify-center p-8">
+                            <div
+                                class="absolute inset-0 bg-stone-100 dark:bg-stone-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                            </div>
+                            <!-- Real Product Image -->
+                            <img src="product-image.jpg" alt="Volume Enhancing Shampoo"
+                                class="absolute inset-0 w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500 z-10">
+
+                            <div
+                                class="absolute bottom-6 left-0 right-0 flex justify-center space-x-4 opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 z-20">
+                                <button
+                                    class="w-12 h-12 bg-white text-gray-900 rounded-full flex items-center justify-center shadow-lg hover:bg-primary-500 hover:text-white transition-colors"><i
+                                        class="ph ph-heart text-xl"></i></button>
+                                <button
+                                    class="h-12 px-6 bg-gray-900 text-white rounded-full font-bold shadow-lg hover:bg-primary-600 transition-colors flex items-center">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-serif text-xl font-bold">Volume Enhancing Shampoo</h3>
+                                <span class="font-medium">$32</span>
+                            </div>
+                            <p class="text-sm text-gray-500 mb-2">Fine / Flat Hair</p>
+                            <div class="flex items-center text-sm text-yellow-500">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph ph-star"></i>
+                                <span class="text-gray-400 ml-2">(210)</span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Sulfate-Free Collection -->
+        <section class="py-24 bg-[#E8E1DA] dark:bg-[#1A1815] relative overflow-hidden">
+            <div class="container mx-auto px-6 lg:px-12 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center lg:items-start gap-16">
+                    <div class="lg:w-1/3" data-aos="fade-right">
+                        <div
+                            class="inline-block px-4 py-1.5 rounded-full bg-white dark:bg-white/10 text-xs font-bold uppercase tracking-widest mb-6">
+                            Clean Beauty</div>
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Pure Care. No Unnecessary Sulfates.
+                        </h2>
+                        <p class="text-gray-700 dark:text-gray-300 mb-8">Experience the power of clean formulation. We
+                            stripped away harsh detergents, silicones, and parabens to give your hair what it truly
+                            needs.</p>
+
+                        <div class="space-y-4">
+                            <label class="flex items-center space-x-3 cursor-pointer group">
+                                <div
+                                    class="w-6 h-6 rounded border-2 border-primary-500 flex items-center justify-center bg-primary-500 text-white transition-colors">
+                                    <i class="ph-bold ph-check text-sm"></i>
+                                </div>
+                                <span class="font-bold group-hover:text-primary-600 transition-colors">Sulfate-Free
+                                    Only</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer group">
+                                <div
+                                    class="w-6 h-6 rounded border-2 border-gray-400 group-hover:border-primary-500 transition-colors">
+                                </div>
+                                <span
+                                    class="font-medium group-hover:text-primary-600 transition-colors">Silicone-Free</span>
+                            </label>
+                            <label class="flex items-center space-x-3 cursor-pointer group">
+                                <div
+                                    class="w-6 h-6 rounded border-2 border-gray-400 group-hover:border-primary-500 transition-colors">
+                                </div>
+                                <span class="font-medium group-hover:text-primary-600 transition-colors">Vegan &
+                                    Cruelty-Free</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-2/3 w-full pb-8" data-aos="fade-left">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                            <!-- Horizontal scroll item 1 -->
+                            <div
+                                class="w-full bg-white/50 dark:bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/40 dark:border-white/10 hover:shadow-xl transition-all">
+                                <div
+                                    class="h-40 bg-gradient-to-br from-green-100 to-green-50 dark:from-green-900/30 dark:to-transparent rounded-xl mb-6 flex items-center justify-center relative overflow-hidden group/img">
+                                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400&q=80"
+                                        alt="Purifying Clay Wash"
+                                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover/img:scale-110 transition-transform duration-500">
+                                    <span
+                                        class="absolute top-2 right-2 bg-white dark:bg-dark-bg text-[10px] font-bold px-2 py-1 rounded uppercase z-10 shadow-sm">Clean</span>
+                                </div>
+                                <h4 class="font-serif font-bold text-lg mb-1">Purifying Clay Wash</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Oily Scalp Therapy</p>
+                            </div>
+                            <div
+                                class="w-full bg-white/50 dark:bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/40 dark:border-white/10 hover:shadow-xl transition-all">
+                                <div
+                                    class="h-40 bg-gradient-to-br from-blue-100 to-blue-50 dark:from-blue-900/30 dark:to-transparent rounded-xl mb-6 flex items-center justify-center relative overflow-hidden group/img">
+                                    <img src="https://images.pexels.com/photos/14149694/pexels-photo-14149694.jpeg"
+                                        alt="Hydrating Co-Wash"
+                                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover/img:scale-110 transition-transform duration-500">
+                                    <span
+                                        class="absolute top-2 right-2 bg-white dark:bg-dark-bg text-[10px] font-bold px-2 py-1 rounded uppercase z-10 shadow-sm">Clean</span>
+                                </div>
+                                <h4 class="font-serif font-bold text-lg mb-1">Hydrating Co-Wash</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Curly & Coily Care</p>
+                            </div>
+                            <div class="md:col-span-2 flex justify-center">
+                                <div
+                                    class="w-full md:w-[calc(50%-1rem)] bg-white/50 dark:bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/40 dark:border-white/10 hover:shadow-xl transition-all">
+                                <div
+                                    class="h-40 bg-gradient-to-br from-rose-100 to-rose-50 dark:from-rose-900/30 dark:to-transparent rounded-xl mb-6 flex items-center justify-center relative overflow-hidden group/img">
+                                    <img src="https://images.pexels.com/photos/34089128/pexels-photo-34089128.jpeg"
+                                        alt="Color Protect Mist"
+                                        class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover/img:scale-110 transition-transform duration-500">
+                                    <span
+                                        class="absolute top-2 right-2 bg-white dark:bg-dark-bg text-[10px] font-bold px-2 py-1 rounded uppercase z-10 shadow-sm">Clean</span>
+                                </div>
+                                <h4 class="font-serif font-bold text-lg mb-1">Color Protect Mist</h4>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">UV Defense</p>
+                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Routine Builder -->
+        <section id="routine" class="py-24 bg-white dark:bg-dark-surface">
+            <div class="container mx-auto px-6 lg:px-12 text-center">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4" data-aos="fade-up">Build Your perfect
+                    Routine.</h2>
+                <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-16" data-aos="fade-up"
+                    data-aos-delay="100">Layer your care logically for maximum efficacy. Select products to build your
+                    step-by-step visual timeline.</p>
+
+                <div class="relative max-w-5xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <!-- Timeline Line -->
+                    <div
+                        class="hidden md:block absolute top-1/2 left-0 right-0 h-1 bg-gray-200 dark:bg-gray-800 -translate-y-1/2 z-0">
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-center group cursor-pointer">
+                            <div
+                                class="w-16 h-16 rounded-full bg-white dark:bg-dark-surface border-4 border-primary-100 dark:border-primary-900 flex items-center justify-center text-xl font-bold mb-4 group-hover:border-primary-500 transition-colors shadow-lg z-10">
+                                1</div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Cleanse</h4>
+                            <div
+                                class="w-full bg-gray-50 dark:bg-dark-bg p-4 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 mt-4 group-hover:border-primary-500 transition-colors">
+                                <i class="ph ph-plus text-2xl text-gray-400 mb-2"></i>
+                                <p class="text-xs text-gray-500 font-medium">Add Shampoo</p>
+                            </div>
+                        </div>
+                        <!-- Step 2 -->
+                        <div class="flex flex-col items-center group cursor-pointer">
+                            <div
+                                class="w-16 h-16 rounded-full bg-white dark:bg-dark-surface border-4 border-primary-100 dark:border-primary-900 flex items-center justify-center text-xl font-bold mb-4 group-hover:border-primary-500 transition-colors shadow-lg z-10">
+                                2</div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Condition</h4>
+                            <div
+                                class="w-full bg-gray-50 dark:bg-dark-bg p-4 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 mt-4 group-hover:border-primary-500 transition-colors">
+                                <i class="ph ph-plus text-2xl text-gray-400 mb-2"></i>
+                                <p class="text-xs text-gray-500 font-medium">Add Conditioner</p>
+                            </div>
+                        </div>
+                        <!-- Step 3 -->
+                        <div class="flex flex-col items-center group cursor-pointer">
+                            <div
+                                class="w-16 h-16 rounded-full bg-white dark:bg-dark-surface border-4 border-primary-100 dark:border-primary-900 flex items-center justify-center text-xl font-bold mb-4 group-hover:border-primary-500 transition-colors shadow-lg z-10">
+                                3</div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Treat</h4>
+                            <div
+                                class="w-full bg-gray-50 dark:bg-dark-bg p-4 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 mt-4 group-hover:border-primary-500 transition-colors">
+                                <i class="ph ph-plus text-2xl text-gray-400 mb-2"></i>
+                                <p class="text-xs text-gray-500 font-medium">Add Mask/Serum</p>
+                            </div>
+                        </div>
+                        <!-- Step 4 -->
+                        <div class="flex flex-col items-center group cursor-pointer">
+                            <div
+                                class="w-16 h-16 rounded-full bg-white dark:bg-dark-surface border-4 border-primary-100 dark:border-primary-900 flex items-center justify-center text-xl font-bold mb-4 group-hover:border-primary-500 transition-colors shadow-lg z-10">
+                                4</div>
+                            <h4 class="font-serif font-bold text-lg mb-1">Protect</h4>
+                            <div
+                                class="w-full bg-gray-50 dark:bg-dark-bg p-4 rounded-xl border border-dashed border-gray-300 dark:border-gray-700 mt-4 group-hover:border-primary-500 transition-colors">
+                                <i class="ph ph-plus text-2xl text-gray-400 mb-2"></i>
+                                <p class="text-xs text-gray-500 font-medium">Add Heat Protectant</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button
+                        class="bg-primary-500 text-white hover:bg-primary-600 rounded-full font-bold transition-colors shadow-lg mt-16 px-12 py-4 text-lg">Save
+                        My Routine</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Subscriptions -->
+        <section id="subscriptions" class="py-24 bg-primary-900 text-white relative overflow-hidden">
+            <!-- 3D Background Elements -->
+            <div
+                class="absolute top-0 right-0 w-96 h-96 bg-primary-700/50 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3">
+            </div>
+
+            <div class="container mx-auto px-6 lg:px-12 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2" data-aos="fade-right">
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Never Run Out of Your Hair
+                            Essentials.</h2>
+                        <ul class="space-y-4 mb-8 text-primary-100">
+                            <li class="flex items-center"><i
+                                    class="ph-fill ph-check-circle text-primary-400 mr-3 text-xl"></i> Save 15% on every
+                                order</li>
+                            <li class="flex items-center"><i
+                                    class="ph-fill ph-check-circle text-primary-400 mr-3 text-xl"></i> Free premium
+                                shipping</li>
+                            <li class="flex items-center"><i
+                                    class="ph-fill ph-check-circle text-primary-400 mr-3 text-xl"></i> Pause or cancel
+                                anytime</li>
+                            <li class="flex items-center"><i
+                                    class="ph-fill ph-check-circle text-primary-400 mr-3 text-xl"></i> Early access to
+                                new drops</li>
+                        </ul>
+                    </div>
+
+                    <div class="lg:w-1/2 w-full" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl p-8 relative transform hover:-translate-y-2 transition-transform duration-500">
+                            <!-- Subscription Box Image -->
+                            <img src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&q=80"
+                                alt="Subscription Box"
+                                class="absolute -top-12 -right-6 w-32 h-32 rounded-xl shadow-2xl transform rotate-12 animate-float object-cover border-4 border-white/20">
+
+                            <h3 class="text-2xl font-serif font-bold mb-6">Customize Delivery</h3>
+
+                            <div class="space-y-4 mb-8" id="subscription-selector">
+                                <label
+                                    class="block bg-white/5 border border-white/20 rounded-xl p-4 cursor-pointer hover:bg-white/10 transition-colors relative overflow-hidden sub-option">
+                                    <input type="radio" name="frequency" value="monthly" class="hidden" checked>
+                                    <div class="flex justify-between items-center relative z-10">
+                                        <span class="font-bold">Every 4 Weeks</span>
+                                        <span class="text-primary-300 text-sm">Most Popular</span>
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 indicator-border">
+                                    </div>
+                                </label>
+                                <label
+                                    class="block bg-white/5 border border-white/20 rounded-xl p-4 cursor-pointer hover:bg-white/10 transition-colors relative overflow-hidden sub-option">
+                                    <input type="radio" name="frequency" value="6weeks" class="hidden">
+                                    <div class="flex justify-between items-center relative z-10">
+                                        <span class="font-bold">Every 6 Weeks</span>
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 indicator-border">
+                                    </div>
+                                </label>
+                                <label
+                                    class="block bg-white/5 border border-white/20 rounded-xl p-4 cursor-pointer hover:bg-white/10 transition-colors relative overflow-hidden sub-option">
+                                    <input type="radio" name="frequency" value="8weeks" class="hidden">
+                                    <div class="flex justify-between items-center relative z-10">
+                                        <span class="font-bold">Every 8 Weeks</span>
+                                    </div>
+                                    <div
+                                        class="absolute inset-0 border-2 border-transparent rounded-xl transition-all duration-300 indicator-border">
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="flex justify-between items-end border-t border-white/20 pt-6">
+                                <div>
+                                    <p class="text-sm text-primary-200 mb-1">Total Subscription Value</p>
+                                    <p class="text-3xl font-serif font-bold" id="sub-price">$68.00</p>
+                                </div>
+                                <button
+                                    class="bg-white text-primary-900 px-6 py-3 rounded-full font-bold hover:bg-primary-100 transition-colors whitespace-nowrap">Subscribe
+                                    Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Reviews & Before/After -->
+        <section class="py-24 bg-primary-50 dark:bg-dark-bg">
+            <div class="container mx-auto px-6 lg:px-12">
+                <div class="text-center mb-12" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-4">Real Results. Real Community.</h2>
+
+                    <!-- Filters -->
+                    <div class="flex flex-wrap justify-center gap-2 mt-8">
+                        <button class="px-4 py-1.5 rounded-full bg-primary-900 text-white text-sm font-medium">All
+                            Types</button>
+                        <button
+                            class="px-4 py-1.5 rounded-full bg-white dark:bg-dark-surface border border-gray-200 dark:border-gray-800 text-sm font-medium hover:border-primary-500 transition-colors">Curly</button>
+                        <button
+                            class="px-4 py-1.5 rounded-full bg-white dark:bg-dark-surface border border-gray-200 dark:border-gray-800 text-sm font-medium hover:border-primary-500 transition-colors">Damaged</button>
+                        <button
+                            class="px-4 py-1.5 rounded-full bg-white dark:bg-dark-surface border border-gray-200 dark:border-gray-800 text-sm font-medium hover:border-primary-500 transition-colors">Color-Treated</button>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <!-- Before/After Interactive Slider -->
+                    <div class="lg:w-1/2" data-aos="fade-right">
+                        <div
+                            class="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl group before-after-container cursor-ew-resize">
+                            <!-- After Image -->
+                            <div class="absolute inset-0 bg-cover bg-center"
+                                style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80');">
+                                <div
+                                    class="absolute inset-0 flex items-end justify-end p-8 bg-gradient-to-t from-black/60 to-transparent text-white text-right">
+                                    <div>
+                                        <h4 class="font-serif font-bold text-xl">After: 3 Months</h4>
+                                        <p class="text-sm text-white/80">Using the Restorative Bundle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Before Image (Clipped) -->
+                            <div class="absolute inset-0 bg-cover bg-center before-image border-r-2 border-white grayscale-[50%] saturate-50 contrast-75 sepia-[20%] overflow-hidden"
+                                style="background-image: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=80'); width: 50%;">
+                                <div
+                                    class="absolute inset-0 flex items-end p-8 bg-gradient-to-t from-black/60 to-transparent text-white w-[200%]">
+                                    <div class="whitespace-nowrap">
+                                        <h4 class="font-serif font-bold text-xl">Before</h4>
+                                        <p class="text-sm text-white/80">Dull & Damaged</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slider Handle -->
+                            <div
+                                class="absolute top-0 bottom-0 left-1/2 w-1 bg-white slider-handle -translate-x-1/2 flex items-center justify-center shadow-lg">
+                                <div
+                                    class="w-8 h-8 bg-white rounded-full flex items-center justify-center text-gray-900 shadow-xl">
+                                    <i class="ph ph-arrows-left-right text-xs"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review Wall -->
+                    <div class="lg:w-1/2 columns-1 sm:columns-2 gap-4 space-y-4" data-aos="fade-left">
+                        <!-- Review 1 -->
+                        <div
+                            class="bg-white dark:bg-dark-surface p-6 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
+                            <div class="flex text-yellow-500 mb-3"><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                            <p class="text-gray-700 dark:text-gray-300 mb-4">"Completely transformed my curls. The
+                                hydration is unmatched and my frizz is gone."</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+                                        alt="Sarah M."
+                                        class="w-8 h-8 rounded-full object-cover border border-gray-200 dark:border-gray-700">
+                                    <div>
+                                        <p class="font-bold text-sm">Sarah M.</p>
+                                        <p class="text-xs text-gray-500">Curly / Dry</p>
+                                    </div>
+                                </div>
+                                <i class="ph-fill ph-seal-check text-primary-500" title="Verified Buyer"></i>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 (Image) -->
+                        <div
+                            class="bg-white dark:bg-dark-surface p-2 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
+                            <div class="aspect-square rounded-xl bg-gray-200 dark:bg-gray-700 mb-3 overflow-hidden">
+                                <!-- Customer photo -->
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80"
+                                    alt="Customer Photo" class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-4 pb-4">
+                                <p class="text-sm font-medium mb-1">"Growth serum works miracles!"</p>
+                                <p class="text-xs text-gray-500">- Elena R.</p>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div
+                            class="bg-white dark:bg-dark-surface p-6 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
+                            <div class="flex text-yellow-500 mb-3"><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                                    class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                            <p class="text-gray-700 dark:text-gray-300 mb-4">"I love the subscription feature. It
+                                arrived perfectly on time and my hair has never felt softer."</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
+                                        alt="Jessica T."
+                                        class="w-8 h-8 rounded-full object-cover border border-gray-200 dark:border-gray-700">
+                                    <div>
+                                        <p class="font-bold text-sm">Jessica T.</p>
+                                        <p class="text-xs text-gray-500">Fine / Color-Treated</p>
+                                    </div>
+                                </div>
+                                <i class="ph-fill ph-seal-check text-primary-500"></i>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 (Image) -->
+                        <div
+                            class="bg-white dark:bg-dark-surface p-2 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
+                            <div class="aspect-square rounded-xl bg-gray-200 dark:bg-gray-700 mb-3 overflow-hidden">
+                                <!-- Customer photo -->
+                                <img src="https://images.pexels.com/photos/10617539/pexels-photo-10617539.jpeg"
+                                    alt="Customer Photo" class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-4 pb-4">
+                                <p class="text-sm font-medium mb-1">"Finally, my curls hold their shape all day!"</p>
+                                <p class="text-xs text-gray-500">- Maya J.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Enterprise -->
+        <section id="enterprise" class="bg-dark-surface text-white">
+            <div class="flex flex-col lg:flex-row min-h-[600px]">
+                <div class="lg:w-1/2 p-12 lg:p-24 flex flex-col justify-center bg-dark-bg" data-aos="fade-right">
+                    <span class="text-primary-500 font-bold tracking-widest uppercase text-sm mb-4 block">B2B
+                        Solutions</span>
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold mb-6">Elevate Your Salon Experience.</h2>
+                    <p class="text-gray-400 mb-8 max-w-md">Partner with us to provide your clients with premium,
+                        science-backed hair care. Enjoy professional pricing, bulk ordering, and dedicated support.</p>
+                    <ul class="space-y-4 mb-10 text-sm text-gray-300">
+                        <li class="flex items-center"><i class="ph ph-check text-primary-500 mr-2 text-lg"></i> Custom
+                            Product Programs</li>
+                        <li class="flex items-center"><i class="ph ph-check text-primary-500 mr-2 text-lg"></i> Business
+                            Account Management</li>
+                        <li class="flex items-center"><i class="ph ph-check text-primary-500 mr-2 text-lg"></i>
+                            Education & Training Resources</li>
+                    </ul>
+                    <a href="#" class="btn-primary self-start px-8">Explore Enterprise</a>
+                </div>
+                <!-- Abstract Enterprise Visual -->
+                <div class="lg:w-1/2 relative bg-gradient-to-bl from-primary-900 to-dark-bg flex items-center justify-center p-12 overflow-hidden"
+                    data-aos="fade-left">
+                    <div
+                        class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMGg0MHY0MEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0wIDEwaDQwdjFINHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]">
+                    </div>
+
+                    <form class="glass-card w-full max-w-md p-8 rounded-2xl relative z-10 border border-white/10">
+                        <h3 class="font-serif text-2xl font-bold mb-6">Request Pro Access</h3>
+                        <div class="space-y-4">
+                            <input type="text" placeholder="Salon/Business Name"
+                                class="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-primary-500 transition-colors">
+                            <input type="email" placeholder="Business Email"
+                                class="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-primary-500 transition-colors">
+                            <select
+                                class="w-full bg-white/5 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary-500 transition-colors appearance-none">
+                                <option class="text-gray-900" value="">Business Type</option>
+                                <option class="text-gray-900" value="salon">Salon</option>
+                                <option class="text-gray-900" value="spa">Spa</option>
+                                <option class="text-gray-900" value="retail">Retailer</option>
+                            </select>
+                            <button type="button"
+                                class="w-full bg-primary-500 text-white font-bold rounded-lg px-4 py-3 hover:bg-primary-600 transition-colors">Submit
+                                Enquiry</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 10: Knowledge / Editorial -->
+        <section class="py-24 bg-white dark:bg-dark-surface">
+            <div class="container mx-auto px-6 lg:px-12">
+                <div class="flex justify-between items-end mb-12">
+                    <h2 class="text-4xl font-serif font-bold" data-aos="fade-up">The Journal.</h2>
+                    <a href="#"
+                        class="text-primary-600 dark:text-primary-400 font-bold hover:underline hidden md:block">View
+                        All Articles</a>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8">
+                    <!-- Featured Large -->
+                    <div class="lg:col-span-8 group cursor-pointer" data-aos="fade-up">
+                        <div
+                            class="relative overflow-hidden rounded-3xl aspect-video mb-6 bg-gray-200 dark:bg-gray-800">
+                            <div class="absolute top-4 left-4 z-10 flex space-x-2">
+                                <span
+                                    class="bg-white/90 dark:bg-dark-bg/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold uppercase">Scalp
+                                    Care</span>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80"
+                                alt="Scalp Care"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold mb-2 group-hover:text-primary-600 transition-colors">
+                            The Ultimate Guide to Balancing an Oily Scalp Without Drying Your Ends.</h3>
+                        <p class="text-gray-600 dark:text-gray-400 mb-4">Discover the delicate science of scalp
+                            microbiomes and why traditional clarifying shampoos might be making it worse.</p>
+                        <span class="text-xs text-gray-500 font-medium">5 Min Read</span>
+                    </div>
+
+                    <!-- Smaller Articles -->
+                    <div class="lg:col-span-4 flex flex-col justify-between space-y-8" data-aos="fade-left">
+                        <div class="group cursor-pointer flex gap-4">
+                            <div
+                                class="w-1/3 rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 aspect-square flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400&q=80"
+                                    alt="Ingredients"
+                                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase text-primary-500 mb-1 block">Ingredients</span>
+                                <h4
+                                    class="font-serif font-bold text-lg leading-tight mb-2 group-hover:text-primary-600 transition-colors">
+                                    Why Hyaluronic Acid is the New Hero for Hair.</h4>
+                                <span class="text-xs text-gray-500 font-medium">3 Min Read</span>
+                            </div>
+                        </div>
+                        <div class="group cursor-pointer flex gap-4">
+                            <div
+                                class="w-1/3 rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 aspect-square flex-shrink-0">
+                                <img src="https://images.pexels.com/photos/7755171/pexels-photo-7755171.jpeg"
+                                    alt="Curly Hair Routine"
+                                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase text-primary-500 mb-1 block">Routines</span>
+                                <h4
+                                    class="font-serif font-bold text-lg leading-tight mb-2 group-hover:text-primary-600 transition-colors">
+                                    Pre-Pooing: Is it necessary for curly hair?</h4>
+                                <span class="text-xs text-gray-500 font-medium">4 Min Read</span>
+                            </div>
+                        </div>
+                        <div class="group cursor-pointer flex gap-4">
+                            <div
+                                class="w-1/3 rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 aspect-square flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&q=80"
+                                    alt="Heat Protection"
+                                    class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase text-primary-500 mb-1 block">Styling</span>
+                                <h4
+                                    class="font-serif font-bold text-lg leading-tight mb-2 group-hover:text-primary-600 transition-colors">
+                                    Heat Protection Science Explained.</h4>
+                                <span class="text-xs text-gray-500 font-medium">6 Min Read</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 11: Trust / Results (Stats) -->
+        <section
+            class="py-20 border-y border-gray-200 dark:border-gray-800 bg-primary-50/50 dark:bg-dark-bg overflow-hidden">
+            <div class="container mx-auto px-6 lg:px-12">
+                <div
+                    class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-200 dark:divide-gray-800">
+                    <div data-aos="fade-up" data-aos-delay="0">
+                        <div
+                            class="text-4xl md:text-5xl font-serif font-bold text-primary-600 dark:text-primary-400 mb-2 inline-block">
+                            98</div><span class="text-2xl font-serif text-primary-600 dark:text-primary-400">%</span>
+                        <p class="text-sm font-bold uppercase tracking-widest mt-2">Satisfaction</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <div
+                            class="text-4xl md:text-5xl font-serif font-bold text-primary-600 dark:text-primary-400 mb-2 inline-block">
+                            50</div><span class="text-2xl font-serif text-primary-600 dark:text-primary-400">+</span>
+                        <p class="text-sm font-bold uppercase tracking-widest mt-2">Formulations</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="text-4xl md:text-5xl font-serif font-bold text-primary-600 dark:text-primary-400 mb-2 inline-block">
+                            10</div><span class="text-2xl font-serif text-primary-600 dark:text-primary-400">K+</span>
+                        <p class="text-sm font-bold uppercase tracking-widest mt-2">Customers</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="300">
+                        <div
+                            class="text-4xl md:text-5xl font-serif font-bold text-primary-600 dark:text-primary-400 mb-2">
+                            4.9</div>
+                        <p class="text-sm font-bold uppercase tracking-widest mt-2">Avg. Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 12: Final CTA -->
+        <section class="relative py-32 bg-primary-900 flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent z-0"></div>
+
+            <!-- 3D Floating elements background -->
+            <div class="absolute top-10 left-10 w-24 h-24 bg-primary-500/30 rounded-full blur-xl animate-blob"></div>
+            <div
+                class="absolute bottom-10 right-10 w-32 h-32 bg-primary-300/20 rounded-full blur-xl animate-blob animation-delay-2000">
+            </div>
+
+            <div class="relative z-10 text-center max-w-3xl px-6" data-aos="zoom-in">
+                <h2 class="text-5xl md:text-6xl font-serif font-bold text-white mb-6">Build a Hair Routine That <i
+                        class="text-primary-300">Works</i> for You.</h2>
+                <p class="text-primary-100 text-lg mb-10">Stop guessing. Start transforming. Take the diagnostic today.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#quiz"
+                        class="bg-white text-primary-900 px-8 py-4 rounded-full font-bold text-lg shadow-2xl hover:scale-105 transition-transform duration-300">Take
+                        the Hair Quiz</a>
+                    <a href="#shop"
+                        class="border-2 border-white/50 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors duration-300">Shop
+                        All Products</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-bg text-white pt-20 pb-10 border-t border-white/10">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Brand -->
+                <div>
+                    <a href="#"
+                        class="flex items-center gap-2 text-3xl font-serif font-bold tracking-wider text-white mb-6">
+                        <i class="ph-fill ph-sparkle text-primary-500 text-4xl"></i>
+                        VELLURA<span class="text-primary-500">.</span>
+                    </a>
+                    <p class="text-gray-400 text-sm mb-6 max-w-xs">Premium, science-backed hair care personalized for
+                        your unique hair profile.</p>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-500 transition-colors"><i
+                                class="ph-fill ph-instagram-logo text-xl"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-500 transition-colors"><i
+                                class="ph-fill ph-tiktok-logo text-xl"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-500 transition-colors"><i
+                                class="ph-fill ph-pinterest-logo text-xl"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links 1 -->
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Shop & Explore</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#shop" class="hover:text-white transition-colors">All Products</a></li>
+                        <li><a href="#solutions" class="hover:text-white transition-colors">Hair Solutions</a></li>
+                        <li><a href="#quiz" class="hover:text-white transition-colors">Diagnostic Quiz</a></li>
+                        <li><a href="#subscriptions" class="hover:text-white transition-colors">Subscriptions</a></li>
+                        <li><a href="#routine" class="hover:text-white transition-colors">Routine Builder</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links 2 -->
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Company</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#enterprise" class="hover:text-white transition-colors">Enterprise / Salons</a>
+                        </li>
+                        <li><a href="#" class="hover:text-white transition-colors">Customer Support</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Join the List</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for 10% off your first order and early access to new
+                        drops.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email address"
+                            class="bg-white/5 border border-white/20 rounded-l-lg px-4 py-2 text-white placeholder-gray-500 focus:outline-none focus:border-primary-500 w-full text-sm">
+                        <button type="button"
+                            class="bg-primary-500 text-white px-4 py-2 rounded-r-lg font-bold hover:bg-primary-600 transition-colors"><i
+                                class="ph ph-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy; 2026 Vellura Hair Care. All rights reserved.</p>
+                <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary-500 transition-colors text-white" aria-label="Back to top">
+                    <i class="ph ph-arrow-up text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+        });
+    </script>
+</body>
+
+</html>

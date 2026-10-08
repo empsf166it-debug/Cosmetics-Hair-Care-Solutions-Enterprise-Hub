@@ -1,0 +1,138 @@
+/* Custom Base Styles */
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Glassmorphism Utilities */
+.glass-header {
+  background: rgba(252, 249, 245, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.dark .glass-header {
+  background: rgba(18, 16, 14, 0.8);
+}
+.glass-header.scrolled {
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+.dark .glass-header.scrolled {
+  border-bottom-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* 3D Perspective Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.3d-layer {
+  transform-style: preserve-3d;
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-block px-8 py-3 bg-primary-900 text-white font-bold rounded-full transition-all duration-300 hover:bg-primary-800 hover:shadow-lg hover:-translate-y-1;
+}
+.dark .btn-primary {
+  @apply bg-primary-500 hover:bg-primary-400 text-white;
+}
+
+.btn-secondary {
+  @apply inline-block px-8 py-3 bg-transparent border border-primary-900 text-primary-900 font-bold rounded-full transition-all duration-300 hover:bg-primary-900 hover:text-white;
+}
+.dark .btn-secondary {
+  @apply border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob {
+  animation: blob 7s infinite;
+}
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Hide Scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hair Type Selector */
+.hair-type-selector button.active-type {
+  @apply bg-white dark:bg-primary-900/30 border-primary-500 shadow-md text-primary-900 dark:text-white;
+}
+
+/* Diagnostic Quiz Transitions */
+.quiz-step {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.quiz-step.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quiz-option.selected {
+  @apply bg-white/20 border-white text-white scale-105;
+}
+
+/* Before/After Slider */
+.before-after-container {
+  touch-action: none;
+}
+.slider-handle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: white;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+/* Subscriptions Indicator */
+.sub-option input:checked ~ .indicator-border {
+  @apply border-primary-500;
+}
+.sub-option input:checked ~ div span:first-child {
+  @apply text-primary-400;
+}
+
+/* Mobile Menu Links */
+.mobile-link {
+  @apply text-gray-900 dark:text-white hover:text-primary-500 dark:hover:text-primary-400 transition-colors block py-2;
+}
