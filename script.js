@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const x = (e.clientX / window.innerWidth - 0.5) * 20;
             const y = (e.clientY / window.innerHeight - 0.5) * 20;
             
-            const layers = heroScene.querySelectorAll('.3d-layer');
+            const layers = heroScene.querySelectorAll('.layer-3d');
             layers.forEach((layer, index) => {
                 const depth = index + 1;
                 layer.style.transform = `rotateY(${x * depth}deg) rotateX(${-y * depth}deg) translateZ(${depth * 20}px)`;

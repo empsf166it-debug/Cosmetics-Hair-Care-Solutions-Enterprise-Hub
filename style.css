@@ -35,7 +35,7 @@
 .perspective-1000 {
   perspective: 1000px;
 }
-.3d-layer {
+.layer-3d {
   transform-style: preserve-3d;
 }
 

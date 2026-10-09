@@ -186,7 +186,7 @@
                     data-aos="zoom-in" data-aos-duration="1500">
                     <!-- Glass Panel -->
                     <div
-                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[450px] glass-card rounded-3xl z-10 border border-white/20 dark:border-white/10 shadow-2xl flex flex-col items-center justify-center p-6 3d-layer">
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-[450px] glass-card rounded-3xl z-10 border border-white/20 dark:border-white/10 shadow-2xl flex flex-col items-center justify-center p-6 layer-3d">
                         <div
                             class="w-full h-full bg-gradient-to-b from-primary-200/30 to-transparent dark:from-primary-900/30 rounded-2xl relative overflow-hidden flex items-end justify-center pb-8">
                             <img src="product-image.jpg" alt="Nourishing Elixir"
@@ -201,11 +201,11 @@
                     </div>
 
                     <!-- Decorative shapes mimicking products -->
-                    <div class="absolute top-20 right-20 w-24 h-48 bg-gradient-to-tr from-primary-400 to-primary-200 dark:from-primary-700 dark:to-primary-500 rounded-full shadow-xl 3d-layer animate-float"
+                    <div class="absolute top-20 right-20 w-24 h-48 bg-gradient-to-tr from-primary-400 to-primary-200 dark:from-primary-700 dark:to-primary-500 rounded-full shadow-xl layer-3d animate-float"
                         style="animation-delay: 0.5s;"></div>
-                    <div class="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-tr from-amber-700 to-amber-300 rounded-full shadow-xl 3d-layer animate-float"
+                    <div class="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-tr from-amber-700 to-amber-300 rounded-full shadow-xl layer-3d animate-float"
                         style="animation-delay: 1.5s;"></div>
-                    <div class="absolute top-40 left-10 w-16 h-16 bg-green-800/40 backdrop-blur-md rounded-lg shadow-xl 3d-layer transform rotate-12 animate-float"
+                    <div class="absolute top-40 left-10 w-16 h-16 bg-green-800/40 backdrop-blur-md rounded-lg shadow-xl layer-3d transform rotate-12 animate-float"
                         style="animation-delay: 2.5s;"></div>
                 </div>
             </div>
@@ -434,7 +434,7 @@
                         </div>
                         <div>
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="font-serif text-xl font-bold">Restorative Hair Mask</h3>
+                                <h3 class="font-serif text-xl font-bold min-h-[3.5rem]">Restorative<br class="hidden lg:block"> Hair Mask</h3>
                                 <span class="font-medium">$48</span>
                             </div>
                             <p class="text-sm text-gray-500 mb-2">Damaged / Color-Treated</p>
@@ -470,7 +470,7 @@
                         </div>
                         <div>
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="font-serif text-xl font-bold">Botanical Scalp Serum</h3>
+                                <h3 class="font-serif text-xl font-bold min-h-[3.5rem]">Botanical<br class="hidden lg:block"> Scalp Serum</h3>
                                 <span class="font-medium">$36</span>
                             </div>
                             <p class="text-sm text-gray-500 mb-2">Dry / Itchy Scalp</p>
@@ -507,7 +507,7 @@
                         </div>
                         <div>
                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="font-serif text-xl font-bold">Volume Enhancing Shampoo</h3>
+                                <h3 class="font-serif text-xl font-bold min-h-[3.5rem] pr-2">Volume Enhancing Shampoo</h3>
                                 <span class="font-medium">$32</span>
                             </div>
                             <p class="text-sm text-gray-500 mb-2">Fine / Flat Hair</p>
@@ -724,7 +724,7 @@
                                 alt="Subscription Box"
                                 class="absolute -top-12 -right-6 w-32 h-32 rounded-xl shadow-2xl transform rotate-12 animate-float object-cover border-4 border-white/20">
 
-                            <h3 class="text-2xl font-serif font-bold mb-6">Customize Delivery</h3>
+                            <h3 class="text-2xl font-serif font-bold mb-6 pr-20 sm:pr-0">Customize Delivery</h3>
 
                             <div class="space-y-4 mb-8" id="subscription-selector">
                                 <label
@@ -760,7 +760,7 @@
                                 </label>
                             </div>
 
-                            <div class="flex justify-between items-end border-t border-white/20 pt-6">
+                            <div class="flex flex-wrap justify-between items-end border-t border-white/20 pt-6 gap-4">
                                 <div>
                                     <p class="text-sm text-primary-200 mb-1">Total Subscription Value</p>
                                     <p class="text-3xl font-serif font-bold" id="sub-price">$68.00</p>
@@ -835,16 +835,16 @@
                     </div>
 
                     <!-- Review Wall -->
-                    <div class="lg:w-1/2 columns-1 sm:columns-2 gap-4 space-y-4" data-aos="fade-left">
+                    <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4" data-aos="fade-left">
                         <!-- Review 1 -->
                         <div
-                            class="bg-white dark:bg-dark-surface p-6 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
+                            class="bg-white dark:bg-dark-surface p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col h-full">
                             <div class="flex text-yellow-500 mb-3"><i class="ph-fill ph-star"></i><i
                                     class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
                                     class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">"Completely transformed my curls. The
+                            <p class="text-gray-700 dark:text-gray-300 mb-4 flex-grow">"Completely transformed my curls. The
                                 hydration is unmatched and my frizz is gone."</p>
-                            <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-between mt-auto">
                                 <div class="flex items-center space-x-3">
                                     <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
                                         alt="Sarah M."
@@ -858,29 +858,15 @@
                             </div>
                         </div>
 
-                        <!-- Review 2 (Image) -->
-                        <div
-                            class="bg-white dark:bg-dark-surface p-2 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
-                            <div class="aspect-square rounded-xl bg-gray-200 dark:bg-gray-700 mb-3 overflow-hidden">
-                                <!-- Customer photo -->
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80"
-                                    alt="Customer Photo" class="w-full h-full object-cover">
-                            </div>
-                            <div class="px-4 pb-4">
-                                <p class="text-sm font-medium mb-1">"Growth serum works miracles!"</p>
-                                <p class="text-xs text-gray-500">- Elena R.</p>
-                            </div>
-                        </div>
-
                         <!-- Review 3 -->
                         <div
-                            class="bg-white dark:bg-dark-surface p-6 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
+                            class="bg-white dark:bg-dark-surface p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col h-full">
                             <div class="flex text-yellow-500 mb-3"><i class="ph-fill ph-star"></i><i
                                     class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
                                     class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
-                            <p class="text-gray-700 dark:text-gray-300 mb-4">"I love the subscription feature. It
+                            <p class="text-gray-700 dark:text-gray-300 mb-4 flex-grow">"I love the subscription feature. It
                                 arrived perfectly on time and my hair has never felt softer."</p>
-                            <div class="flex items-center justify-between">
+                            <div class="flex items-center justify-between mt-auto">
                                 <div class="flex items-center space-x-3">
                                     <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop"
                                         alt="Jessica T."
@@ -894,15 +880,29 @@
                             </div>
                         </div>
 
+                        <!-- Review 2 (Image) -->
+                        <div
+                            class="bg-white dark:bg-dark-surface p-2 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col h-full">
+                            <div class="aspect-square rounded-xl bg-gray-200 dark:bg-gray-700 mb-3 overflow-hidden">
+                                <!-- Customer photo -->
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&q=80"
+                                    alt="Customer Photo" class="w-full h-full object-cover">
+                            </div>
+                            <div class="px-4 pb-4 flex flex-col flex-grow justify-end">
+                                <p class="text-sm font-medium mb-1">"Growth serum works miracles!"</p>
+                                <p class="text-xs text-gray-500">- Elena R.</p>
+                            </div>
+                        </div>
+
                         <!-- Review 4 (Image) -->
                         <div
-                            class="bg-white dark:bg-dark-surface p-2 rounded-2xl break-inside-avoid shadow-sm border border-gray-100 dark:border-gray-800">
+                            class="bg-white dark:bg-dark-surface p-2 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col h-full">
                             <div class="aspect-square rounded-xl bg-gray-200 dark:bg-gray-700 mb-3 overflow-hidden">
                                 <!-- Customer photo -->
                                 <img src="https://images.pexels.com/photos/10617539/pexels-photo-10617539.jpeg"
                                     alt="Customer Photo" class="w-full h-full object-cover">
                             </div>
-                            <div class="px-4 pb-4">
+                            <div class="px-4 pb-4 flex flex-col flex-grow justify-end">
                                 <p class="text-sm font-medium mb-1">"Finally, my curls hold their shape all day!"</p>
                                 <p class="text-xs text-gray-500">- Maya J.</p>
                             </div>
@@ -993,7 +993,7 @@
                     </div>
 
                     <!-- Smaller Articles -->
-                    <div class="lg:col-span-4 flex flex-col justify-between space-y-8" data-aos="fade-left">
+                    <div class="lg:col-span-4 flex flex-col gap-8" data-aos="fade-left">
                         <div class="group cursor-pointer flex gap-4">
                             <div
                                 class="w-1/3 rounded-xl overflow-hidden bg-gray-200 dark:bg-gray-800 aspect-square flex-shrink-0">
